@@ -1,0 +1,16 @@
+<p>
+  nt-if-else works!
+</p>
+
+<button (click)="isShow = !isShow" class="btn btn-primary">Toggle</button>
+<button (click)="isShow = !isShow" mat-raised-button color="primary">Toggle</button>
+
+<div *ngIf="isShow; else hide">
+  show
+</div>
+
+<ng-template #hide>
+  <div>
+    HIDE
+  </div>
+</ng-template>
