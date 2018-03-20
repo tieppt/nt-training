@@ -6,13 +6,21 @@ import { MatCompModule } from './mat-comp/mat-comp.module';
 import { AppComponent } from './app.component';
 import { MatabComponent } from './matab/matab.component';
 import { NtIfElseComponent } from './nt-if-else/nt-if-else.component';
+import { TapContainerComponent } from './tap-container/tap-container.component';
+import { TapAComponent } from './tap-a/tap-a.component';
+import { TapBComponent } from './tap-b/tap-b.component';
+import { TapCComponent } from './tap-c/tap-c.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MatabComponent,
-    NtIfElseComponent
+    NtIfElseComponent,
+    TapContainerComponent,
+    TapAComponent,
+    TapBComponent,
+    TapCComponent
   ],
   imports: [
     BrowserModule,

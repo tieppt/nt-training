@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nt-if-else.component.scss']
 })
 export class NtIfElseComponent implements OnInit {
-  isShow: boolean = true;
+  isShow = true;
   constructor() { }
 
   ngOnInit() {
