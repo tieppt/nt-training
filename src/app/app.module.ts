@@ -10,6 +10,7 @@ import { TapContainerComponent } from './tap-container/tap-container.component';
 import { TapAComponent } from './tap-a/tap-a.component';
 import { TapBComponent } from './tap-b/tap-b.component';
 import { TapCComponent } from './tap-c/tap-c.component';
+import { HttpNtModule } from './http-nt/http-nt.module';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { TapCComponent } from './tap-c/tap-c.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCompModule
+    MatCompModule,
+    HttpNtModule
   ],
   providers: [],
   bootstrap: [AppComponent]
