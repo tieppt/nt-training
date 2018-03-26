@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { tap, map } from 'rxjs/operators';
+import { empty } from 'rxjs/observable/empty';
 
 export interface IPost {
   userId: string;
@@ -31,14 +32,14 @@ export class PostService {
         map(res => JSON.parse(res.body))
       );
     */
-    let headers = new HttpHeaders();
-    headers = headers.set('my-header', '123');
-    const options: Object = {
-      headers
-    };
-    return this.http.get<IPost[]>(
-      'https://jsonplaceholder.typicode.com/posts', options
-    );
-
+    // let headers = new HttpHeaders();
+    // headers = headers.set('my-header', '123');
+    // const options: Object = {
+    //   headers
+    // };
+    // return this.http.get<IPost[]>(
+    //   'https://jsonplaceholder.typicode.com/posts', options
+    // );
+    return empty();
   }
 }

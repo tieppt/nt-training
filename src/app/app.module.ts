@@ -11,6 +11,9 @@ import { TapAComponent } from './tap-a/tap-a.component';
 import { TapBComponent } from './tap-b/tap-b.component';
 import { TapCComponent } from './tap-c/tap-c.component';
 import { HttpNtModule } from './http-nt/http-nt.module';
+import { AppRoutingModule } from './app-routing.module';
+import { ProductModule } from './product/product.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -21,13 +24,17 @@ import { HttpNtModule } from './http-nt/http-nt.module';
     TapContainerComponent,
     TapAComponent,
     TapBComponent,
-    TapCComponent
+    TapCComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatCompModule,
-    HttpNtModule
+    HttpNtModule,
+    ProductModule,
+
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
